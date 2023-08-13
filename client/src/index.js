@@ -1,19 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import config from './config';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import config from './config';
 import { createClient } from '@supabase/supabase-js';
 import { SessionContextProvider } from '@supabase/auth-helpers-react';
 
 
-const supabaseURL = config.supabaseURL;
-const publicAnonKey = config.publicAnonKey;
-
 const supabase = createClient(
-  supabaseURL,
-  publicAnonKey
+  config.supabaseURL,
+  config.publicAnonKey
 );
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

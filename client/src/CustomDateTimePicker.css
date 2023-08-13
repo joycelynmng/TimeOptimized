@@ -1,0 +1,19 @@
+
+
+.custom-datetime-picker {
+  /* Customize the input box appearance */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.custom-datetime-picker__calendar {
+  /* Customize the calendar appearance */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 10px;
+}
